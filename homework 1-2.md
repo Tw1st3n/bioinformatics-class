@@ -8,3 +8,7 @@
 ## 退出_container_提供的运行环境
 输入**exit**
 ![docker 使用3](https://github.com/Tw1st3n/bioinformatics-class/blob/main/docker%20%E4%BD%BF%E7%94%A83.png)<br>
+
+# 练习vim
+## 进入Normal模式并新建文件
+输入vim 1.txt后回车<br>
