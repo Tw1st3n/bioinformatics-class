@@ -15,8 +15,9 @@
 ![vim 练习1](https://github.com/Tw1st3n/bioinformatics-class/blob/main/vim%E7%BB%83%E4%B9%A01.png)<br>
 ## 编辑文件内容
 输入**i**（用于从光标处插入），底部会显示 **-- INSERT --**，表示可以输入文本
-
+![vim 练习2](https://github.com/Tw1st3n/bioinformatics-class/blob/main/vim%E7%BB%83%E4%B9%A02.png)<br>
 输入所需文本**Hello, this is my first Vim edit**
-
+![vim 练习3](https://github.com/Tw1st3n/bioinformatics-class/blob/main/vim%E7%BB%83%E4%B9%A03.png)<br>
 ## 保存并退出
 按 **Esc** 返回普通模式后。输入 **:wq** 保存并退出
+![vim 练习4](https://github.com/Tw1st3n/bioinformatics-class/blob/main/vim%E7%BB%83%E4%B9%A04.png)<br>
