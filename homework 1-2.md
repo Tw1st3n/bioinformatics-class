@@ -11,4 +11,12 @@
 
 # 练习vim
 ## 进入Normal模式并新建文件
-输入vim 1.txt后回车<br>
+输入**vim 1.txt**后回车<br>
+![vim 练习1](https://github.com/Tw1st3n/bioinformatics-class/blob/main/vim%E7%BB%83%E4%B9%A01.png)<br>
+## 编辑文件内容
+输入**i**（用于从光标处插入），底部会显示 **-- INSERT --**，表示可以输入文本
+
+输入所需文本**Hello, this is my first Vim edit**
+
+## 保存并退出
+按 **Esc** 返回普通模式后。输入 **:wq** 保存并退出
