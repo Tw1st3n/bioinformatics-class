@@ -5,7 +5,7 @@
 ## 1. 网页版BLASTP比对操作与E值/P值解释
 
 ### 操作截图
-![]()
+![](https://github.com/Tw1st3n/bioinformatics-class/blob/main/%E5%9C%A8%E7%BA%BFBLAST-1.png)
 
 
 ### E值与P值的实际意义
