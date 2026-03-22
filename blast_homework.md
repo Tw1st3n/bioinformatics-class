@@ -6,7 +6,7 @@
 
 ### 操作截图
 ![](https://github.com/Tw1st3n/bioinformatics-class/blob/main/%E5%9C%A8%E7%BA%BFBLAST-1.png)
-
+![](https://github.com/Tw1st3n/bioinformatics-class/blob/main/%E5%9C%A8%E7%BA%BFBLAST-2.png)
 
 ### E值与P值的实际意义
 - **E值（Expect value）**：  
@@ -60,21 +60,50 @@ echo "完成！结果文件：$result_file"
 ```
 
 
-### 2. 脚本使用说明
-- 依赖：安装 `ncbi-blast+`（Ubuntu: `sudo apt install ncbi-blast+`；CentOS: `sudo yum install ncbi-blast+`）。  
-- 运行：  
-  ```bash
-  chmod +x shuffle_blast.sh  # 赋予执行权限
-  ./shuffle_blast.sh          # 运行脚本
-  ```
 
-
-### 3. 结果示例与解释
+### 2. 结果示例与解释
 **结果文件（`blast_pairs_results.txt`）示例内容**：
 ```
-shuffled_1  shuffled_1  100.00  50  0.0   100.0
-shuffled_1  shuffled_2  20.00   50  5.2   15.3
-shuffled_2  shuffled_3  18.00   50  8.1   12.5
+\shuffled_1     shuffled_1      100.000 70      2.20e-43        123
+shuffled_1      shuffled_3      50.000  18      0.41    15.8
+shuffled_1      shuffled_7      70.000  10      0.56    15.4
+shuffled_1      shuffled_6      87.500  8       1.5     14.2
+shuffled_1      shuffled_2      44.828  29      1.9     13.9
+shuffled_1      shuffled_4      54.545  11      5.9     12.7
+shuffled_2      shuffled_2      100.000 70      2.20e-43        123
+shuffled_2      shuffled_3      43.750  16      0.65    15.0
+shuffled_2      shuffled_1      44.828  29      1.9     13.9
+shuffled_2      shuffled_7      55.556  9       2.8     13.5
+shuffled_3      shuffled_3      100.000 70      2.20e-43        123
+shuffled_3      shuffled_1      41.026  39      0.22    16.5
+shuffled_3      shuffled_2      41.379  29      0.65    15.0
+shuffled_3      shuffled_6      42.424  33      3.6     13.1
+shuffled_4      shuffled_4      100.000 70      2.20e-43        123
+shuffled_4      shuffled_8      43.478  23      3.2     13.5
+shuffled_4      shuffled_9      40.000  15      4.7     12.7
+shuffled_5      shuffled_5      100.000 70      2.20e-43        123
+shuffled_5      shuffled_7      43.750  16      0.71    15.0
+shuffled_5      shuffled_2      41.667  36      2.2     13.9
+shuffled_5      shuffled_6      62.500  8       3.8     13.1
+shuffled_6      shuffled_6      100.000 70      2.20e-43        123
+shuffled_6      shuffled_8      66.667  12      0.72    15.0
+shuffled_6      shuffled_8      50.000  16      7.0     12.3
+shuffled_6      shuffled_1      87.500  8       1.6     14.2
+shuffled_6      shuffled_7      60.000  10      8.9     11.9
+shuffled_7      shuffled_7      100.000 70      2.20e-43        123
+shuffled_7      shuffled_5      43.750  16      0.40    15.8
+shuffled_7      shuffled_1      63.636  11      0.53    15.4
+shuffled_7      shuffled_2      55.556  9       2.7     13.5
+shuffled_7      shuffled_10     62.500  8       7.2     12.3
+shuffled_8      shuffled_8      100.000 70      2.20e-43        123
+shuffled_9      shuffled_9      100.000 70      2.20e-43        123
+shuffled_9      shuffled_1      83.333  6       3.7     13.1
+shuffled_9      shuffled_2      46.667  15      3.9     13.1
+shuffled_9      shuffled_4      50.000  6       7.0     12.3
+shuffled_10     shuffled_10     100.000 70      2.20e-43        123
+shuffled_10     shuffled_1      56.522  23      0.007   20.4
+shuffled_10     shuffled_6      66.667  9       1.8     13.9
+shuffled_10     shuffled_7      60.000  10      6.2     12.7
 ...
 ```
 
@@ -126,5 +155,3 @@ PAM矩阵基于“可接受点突变”概率构建，对称与不对称的核�
 - **不对称PAM250**：  
   适用于**精细进化分析**（如特定物种类群的进化树构建、密码子偏好性强的序列比对）。它能更真实地反映突变方向的差异，但需更多进化数据支撑，计算复杂度更高，应用场景较窄。
 
-
-如需进一步验证PAM矩阵文献细节或脚本调试，可随时补充说明！
