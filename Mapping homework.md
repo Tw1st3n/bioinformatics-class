@@ -103,4 +103,4 @@ $$MAPQ = -10 \times log_{10}(P)$$
 - 无论何种情况，仅通过SAM/BAM文件无法推断整条染色体或全基因组的参考序列，必须依赖原始参考基因组FASTA文件。
 
 ## 四、BWA软件安装与酵母基因组比对流程
-！[](https://github.com/Tw1st3n/bioinformatics-class/blob/main/mapping%20homework.png)
+![](https://github.com/Tw1st3n/bioinformatics-class/blob/main/mapping%20homework.png)
